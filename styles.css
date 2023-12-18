@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+}
+.container-right {
+  flex: 1;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  background-color: #191718;
+}
+.sidebar-link {
+  height: 16px;
+  text-decoration: none;
+  color: #aaa;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 14px 0px 14px 16px;
+  border-bottom: 1px solid #5c5c5c;
+}
+.sidebar-link:hover {
+  background-color: #5c5c5c;
+  color: #fff;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 129px;
+}
+.content-logo {
+  width: 310px;
+  height: 122px;
+  margin: 20px 0 30px 0;
+}
+.content-group1 {
+  background-color: #efefef;
+  padding: 38px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.content-group1__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 18px;
+}
+.content-group1__description {
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18.75px;
+  margin: 0 269px;
+}
+.content-group2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content-group2__item {
+  width: 470px;
+}
+.cg2-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.cg2-center {
+  display: flex;
+}
+.cg2-center__img {
+  margin-right: 16px;
+  max-height: 128px;
+}
+.mglr-50 {
+  margin: 0 50px;
+}
+.cg2-center__text {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000;
+  line-height: 18.75px;
+  font-weight: 400;
+}
+.cg2-text {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000;
+  line-height: 18.75px;
+  font-weight: 400;
+}
+.footer {
+  margin-top: 182px;
+  border-top: 1px solid #dedede;
+}
+.footer-text {
+  padding: 30px 0;
+  margin-left: 129px;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000;
+  line-height: 18.75px;
+  font-weight: 400;
+}
+
+.cg2-center__texttab {
+  display: none;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000;
+  line-height: 18.75px;
+  font-weight: 400;
+}
+.cg2-center__textmb{
+    display: none;
+  }
+  .cg2-text__mb{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+/* Tab */
+@media only screen and (max-width: 1024px) {
+  .content {
+    margin: 0 100px;
+  }
+  .content-group2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .mglr-50 {
+    margin: 50px 0;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+  .footer-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  .content-group1__description {
+    margin: 0 40px;
+  }
+  .content-group2__item {
+    width: auto;
+  }
+  .cg2-center__text {
+    display: none;
+  }
+  .cg2-center__texttab {
+    display: block;
+  }
+  .cg2-text {
+    display: none;
+  }
+  .cg2-center__textmb{
+    display: none;
+  }
+  .cg2-text__mb{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .cg2-center__texttab {
+    display: none;
+  }
+  .cg2-text {
+    display: block;
+  }
+  .content-logo {
+    width: 120px;
+    height: auto;
+  }
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    left: -250px;
+    transition: all 0.3s ease;
+  }
+  .content {
+    margin: 0 20px;
+  }
+  .cg2-center__text {
+    display: none;
+  }
+  .cg2-text{
+    display: none;
+  }
+  .cg2-center__textmb {
+    display: block;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #000;
+    line-height: 18.75px;
+    font-weight: 400;
+  }
+  .cg2-text__mb{
+    display: block;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #000;
+    line-height: 18.75px;
+    font-weight: 400;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .menu{
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+}
